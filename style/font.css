@@ -1,0 +1,218 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/book-antiqua");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("../font/GmarketSansTTFLight.eot");
+  src: url("../font/GmarketSansTTFLight.eot?#iefix") format("embedded-opentype"), url("../font/GmarketSansTTFLight.woff") format("woff"), url("../font/GmarketSansTTFLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("../font/GmarketSansTTFMedium.eot");
+  src: url("../font/GmarketSansTTFMedium.eot?#iefix") format("embedded-opentype"), url("../font/GmarketSansTTFMedium.woff") format("woff"), url("../font/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("../font/GmarketSansTTFBold.eot");
+  src: url("../font/GmarketSansTTFBold.eot?#iefix") format("embedded-opentype"), url("../font/GmarketSansTTFBold.woff") format("woff"), url("../font/GmarketSansTTFBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24Shiningstar";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KCC-eunyoung";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InkLipquid";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanumSQ";
+  src: url(../font/NanumSquareR.eot);
+  src: local("nanumSQ"), url(../font/NanumSquareR.woff) format("woff"), url(../font/NanumSquareR.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "nanumSQL";
+  src: url(../font/NanumSquareL.eot);
+  src: local("nanumSQL"), url(../font/NanumSquareL.woff) format("woff"), url(../font/NanumSquareL.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "nanumSQB";
+  src: url(../font/NanumSquareB.eot);
+  src: local("nanumSQB"), url(../font/NanumSquareB.woff) format("woff");
+}
+
+@font-face {
+  font-family: "nanumSQEB";
+  src: url(../font/NanumSquareEB.eot);
+  src: local("nanumSQEB"), url(../font/NanumSquareEB.woff) format("woff");
+}
+
+@font-face {
+  font-family: "RagnarSC";
+  src: url("../font/Ragnar SC Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TmonMonsori";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Father_loveletter";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_03@1.0/Father_loveletter.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Scandia";
+  src: local("Scandia Regular"), local("Scandia-Regular"), url("../font/Scandia-Regular.woff2") format("woff2"), url("../font/Scandia-Regular.woff") format("woff"), url("../font/Scandia-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 폰트 CSS */
+.gsb {
+  font-family: "GmarketSansBold";
+  transform: skew(-0.1deg);
+}
+.gsm {
+  font-family: "GmarketSansMedium";
+  transform: skew(-0.1deg);
+}
+.yp {
+  font-family: "1YangPyeongL";
+  transform: skew(-0.1deg);
+}
+.kcc {
+  font-family: "KCC-eunyoung";
+  transform: skew(-0.1deg);
+}
+.shining {
+  font-family: "Cafe24Shiningstar";
+  transform: skew(-0.1deg);
+}
+.playfair {
+  font-family: "Playfair Display", serif;
+  transform: skew(-0.1deg);
+}
+.noto {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+.nanum {
+  font-family: 나눔스퀘어, "NanumSquare", sans-serif !important;
+  transform: skew(-0.1deg);
+}
+.ridi {
+  font-family: "RIDIBatang";
+  transform: skew(-0.1deg);
+}
+.tvnenjoy {
+  font-family: "OTEnjoystoriesBA";
+  transform: skew(-0.1deg);
+}
+.nanumsq {
+  font-family: "nanumSQ";
+  transform: skew(-0.1deg);
+}
+.nanumsql {
+  font-family: "nanumSQL";
+  transform: skew(-0.1deg);
+}
+.nanumsqb {
+  font-family: "nanumSQB";
+  transform: skew(-0.1deg);
+}
+.nanumsqeb {
+  font-family: "nanumSQEB";
+  transform: skew(-0.1deg);
+}
+.nanummyeongjo {
+  font-family: "Nanum Myeongjo", serif;
+  transform: skew(-0.1deg);
+}
+.nanumpenscript {
+  font-family: "Nanum Pen Script", cursive;
+  transform: skew(-0.1deg);
+}
+.bookAntiqua {
+  font-family: "Book Antiqua", sans-serif;
+  transform: skew(-0.1deg);
+  font-style: italic;
+}
+.tmon {
+  font-family: "TmonMonsori";
+  transform: skew(-0.1deg);
+}
+.faceshop {
+  font-family: "InkLipquid";
+  transform: skew(-0.1deg);
+}
+.loveletter {
+  font-family: "Father_loveletter";
+  transform: skew(-0.1deg);
+}
+.marcellus {
+  font-family: "Marcellus", serif;
+  transform: skew(-0.1deg);
+}
+.scandia {
+  font-family: "Scandia";
+  transform: skew(-0.1deg);
+}
+.ragnar {
+  font-family: "RagnarSC";
+  transform: skew(-0.1deg);
+}
+.anticslab {
+  font-family: "Antic Slab", serif;
+  transform: skew(-0.1deg);
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+  transform: skew(-0.1deg);
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  transform: skew(-0.1deg);
+}
+
+/* 폰트 CSS */

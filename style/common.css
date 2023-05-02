@@ -1,0 +1,914 @@
+/* =================================================== common style ======================================================= */
+/* =================================================== common style ======================================================= */
+
+@charset "utf-8";
+
+body {
+  font-family: "Lato", sans-serif, "Antic Slab", serif;
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1.5;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: rgba(220, 220, 220, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border-radius: 5px;
+  background-color: #516371;
+  border: 2px solid transparent;
+}
+
+::-moz-selection {
+  background: #7c97aa;
+  color: #fff;
+}
+::selection {
+  background: #7c97aa;
+  color: #fff;
+}
+
+:root {
+  --black: #1b1b1d;
+  --light-black: #333;
+  --white: #fff;
+  --light-white: rgba(255, 255, 255, 0.9);
+  --yellow: #fecc00;
+
+  --text-color: #ffeebd;
+  --link-color: #00ff90;
+  --hash-tag: rgb(10, 205, 206);
+  --hash-tag-bd: rgba(10, 205, 206, 0.25);
+
+  --home: #f68315;
+  --gmail: #ea4335;
+  --velog: #20c997;
+  --github: #204ecf;
+
+  --html: #e34c26;
+  --css: #1572b6;
+  --sass: #c69;
+  --javascript: #f7df1e;
+  --typescript: #3178c6;
+  --react: #61dafb;
+  --jquery: #0769ad;
+  --php: #777bb4;
+  --git: #f05032;
+}
+
+a {
+  color: var(--link-color);
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+label,
+a,
+p {
+  font-family: "nanumSQ";
+  transform: skew(-0.1deg);
+}
+
+span.regular {
+  font-family: "nanumSQ";
+  transform: skew(-0.1deg);
+}
+
+span.light {
+  font-family: "nanumSQL";
+  transform: skew(-0.1deg);
+}
+
+span.bold {
+  font-family: "nanumSQB";
+  transform: skew(-0.1deg);
+}
+
+span.ebold {
+  font-family: "nanumSQEB";
+  transform: skew(-0.1deg);
+}
+
+.point-color {
+  color: var(--point-color);
+}
+
+.main-color {
+  color: var(--clr-main);
+}
+
+.main-color2 {
+  color: var(--btn-color);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* =================================================== common style ======================================================= */
+/* =================================================== common style ======================================================= */
+
+/* =================================================== font size ======================================================= */
+/* =================================================== font size ======================================================= */
+
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 35px;
+}
+h5 {
+  font-size: 28px;
+}
+h6 {
+  font-size: 25px;
+}
+p {
+  font-size: 18px;
+}
+
+.x0_1 {
+  font-size: 0.1em;
+}
+.x0_2 {
+  font-size: 0.2em;
+}
+.x0_3 {
+  font-size: 0.3em;
+}
+.x0_4 {
+  font-size: 0.4em;
+}
+.x0_5 {
+  font-size: 0.5em;
+}
+.x0_6 {
+  font-size: 0.6em;
+}
+.x0_7 {
+  font-size: 0.7em;
+}
+.x0_8 {
+  font-size: 0.8em;
+}
+.x0_9 {
+  font-size: 0.9em;
+}
+
+.x1_1 {
+  font-size: 1.1em;
+}
+.x1_2 {
+  font-size: 1.2em;
+}
+.x1_3 {
+  font-size: 1.3em;
+}
+.x1_4 {
+  font-size: 1.4em;
+}
+.x1_5 {
+  font-size: 1.5em;
+}
+.x1_6 {
+  font-size: 1.6em;
+}
+.x1_7 {
+  font-size: 1.7em;
+}
+.x1_8 {
+  font-size: 1.8em;
+}
+.x1_9 {
+  font-size: 1.9em;
+}
+
+.lh0-7 {
+  line-height: 0.7;
+}
+.lh0-8 {
+  line-height: 0.8;
+}
+.lh0-9 {
+  line-height: 0.9;
+}
+.lh1 {
+  line-height: 1;
+}
+.lh1-1 {
+  line-height: 1.1;
+}
+.lh1-2 {
+  line-height: 1.2;
+}
+.lh1-3 {
+  line-height: 1.3;
+}
+.lh1-4 {
+  line-height: 1.4;
+}
+.lh1-6 {
+  line-height: 1.6;
+}
+.lh1-7 {
+  line-height: 1.7;
+}
+.lh1-8 {
+  line-height: 1.8;
+}
+
+/* 디바이스 크기가 1024px 이하일 때 */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  h6 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* 디바이스 크기가 769px 이하일 때 */
+@media screen and (max-width: 769px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  h6 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+/* 디바이스 크기가 480px 이하일 때 */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+/* =================================================== font style ======================================================= */
+/* =================================================== font style ======================================================= */
+
+/* =================================================== margin & padding ======================================================= */
+/* =================================================== margin & padding ======================================================= */
+
+.p0 {
+  padding: 0;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.mt80 {
+  margin-top: 80px;
+}
+.mt100 {
+  margin-top: 100px;
+}
+.mt120 {
+  margin-top: 120px;
+}
+.mt150 {
+  margin-top: 150px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb60 {
+  margin-bottom: 60px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb80 {
+  margin-bottom: 80px;
+}
+.mb100 {
+  margin-bottom: 100px;
+}
+.mb120 {
+  margin-bottom: 120px;
+}
+.mb150 {
+  margin-bottom: 150px;
+}
+
+/* 디바이스 크기가 769px 이하일 때 */
+@media screen and (max-width: 769px) {
+  .mt60 {
+    margin-top: 40px;
+  }
+  .mt80 {
+    margin-top: 40px;
+  }
+  .mt100 {
+    margin-top: 50px;
+  }
+  .mt120 {
+    margin-top: 60px;
+  }
+  .mt150 {
+    margin-top: 70px;
+  }
+
+  .mb60 {
+    margin-bottom: 40px;
+  }
+  .mb80 {
+    margin-bottom: 40px;
+  }
+  .mb100 {
+    margin-bottom: 50px;
+  }
+  .mb120 {
+    margin-bottom: 60px;
+  }
+  .mb150 {
+    margin-bottom: 70px;
+  }
+}
+
+/* 디바이스 크기가 480px 이하일 때 */
+@media screen and (max-width: 480px) {
+  .mt20 {
+    margin-top: 10px;
+  }
+  .mt40 {
+    margin-top: 20px;
+  }
+  .mt60 {
+    margin-top: 30px;
+  }
+
+  .mb20 {
+    margin-bottom: 10px;
+  }
+  .mb40 {
+    margin-bottom: 20px;
+  }
+  .mb60 {
+    margin-bottom: 30px;
+  }
+}
+
+/* =================================================== margin & padding ======================================================= */
+/* =================================================== margin & padding ======================================================= */
+
+/* =================================================== flex style ======================================================= */
+/* =================================================== flex style ======================================================= */
+
+.flex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.flex-ac {
+  align-items: center;
+}
+.flex-jc {
+  justify-content: center;
+}
+.flex-c {
+  justify-content: center;
+  align-items: center;
+}
+.flex-sb {
+  justify-content: space-between;
+}
+.flex-fs {
+  justify-content: flex-start;
+}
+
+.flex p {
+  white-space: pre-line;
+}
+
+.block-a {
+  width: auto;
+}
+.block-1 {
+  width: 100%;
+}
+.block-2 {
+  width: 50%;
+}
+.block-3 {
+  width: 33.3%;
+}
+.block-4 {
+  width: 25%;
+}
+.block-5 {
+  width: 20%;
+}
+.block-6 {
+  width: 16.6%;
+}
+
+.block-90 {
+  width: 90%;
+}
+.block-80 {
+  width: 80%;
+}
+.block-70 {
+  width: 70%;
+}
+.block-60 {
+  width: 60%;
+}
+.block-40 {
+  width: 40%;
+}
+.block-30 {
+  width: 30%;
+}
+.block-10 {
+  width: 10%;
+}
+
+.flex > li {
+  position: relative;
+}
+.flex > li > div {
+  position: relative;
+}
+.flex > li > div.m30 {
+  margin: 30px;
+}
+.flex > li > div.m20 {
+  margin: 20px;
+}
+.flex > li > div.m10 {
+  margin: 10px;
+}
+.flex > li > div.m5 {
+  margin: 5px;
+}
+
+/* 디바이스 크기가 1200px 이하일 때 */
+@media screen and (max-width: 1200px) {
+  .b-block-1 {
+    width: 100%;
+  }
+  .b-block-2 {
+    width: 50%;
+  }
+  .b-block-3 {
+    width: 33.3%;
+  }
+  .b-block-4 {
+    width: 25%;
+  }
+  .b-block-5 {
+    width: 20%;
+  }
+  .b-block-6 {
+    width: 16.6%;
+  }
+}
+
+/* 디바이스 크기가 769px 이하일 때 */
+@media screen and (max-width: 769px) {
+  .m-block-1 {
+    width: 100%;
+  }
+  .m-block-2 {
+    width: 50%;
+  }
+  .m-block-3 {
+    width: 33.3%;
+  }
+  .m-block-4 {
+    width: 25%;
+  }
+  .m-block-5 {
+    width: 20%;
+  }
+  .m-block-6 {
+    width: 16.6%;
+  }
+
+  .m-switch-flex {
+    width: 100%;
+  }
+
+  .m-switch-flex > div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .m-switch-flex:nth-child(even) > div {
+    flex-direction: row-reverse;
+  }
+
+  .m-switch-flex > div > div {
+    flex: 1;
+  }
+
+  .m-switch-flex > div > div:last-child {
+    margin-left: 30px;
+  }
+
+  .m-switch-flex:nth-child(even) > div > div:last-child {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+
+/* 디바이스 크기가 480px 이하일 때 */
+@media screen and (max-width: 480px) {
+  .s-block-1 {
+    width: 100%;
+  }
+  .s-block-2 {
+    width: 50%;
+  }
+  .s-block-3 {
+    width: 33.3%;
+  }
+  .s-block-4 {
+    width: 25%;
+  }
+  .s-block-5 {
+    width: 20%;
+  }
+  .s-block-6 {
+    width: 16.6%;
+  }
+
+  .m-switch-flex > div {
+    display: block;
+    text-align: center;
+  }
+
+  .m-switch-flex > div > div:last-child {
+    margin: 0 !important;
+  }
+}
+
+/* =================================================== flex style ======================================================= */
+/* =================================================== flex style ======================================================= */
+
+/* =================================================== etc ======================================================= */
+/* =================================================== etc ======================================================= */
+
+.w100 {
+  width: 100%;
+}
+.h100 {
+  height: 100%;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.db {
+  display: block;
+}
+
+.op0 {
+  opacity: 0;
+}
+.op1 {
+  opacity: 1;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.box-shadow2 {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.br20 {
+  border-radius: 20px;
+}
+.br100 {
+  border-radius: 100%;
+}
+
+.max1600 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.max1400 {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.max1100 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.max1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.max900 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.max800 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.max700 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.max600 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.namepen {
+  width: fit-content;
+  padding: 0 0.25%;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+.namepen::after {
+  position: absolute;
+  display: block;
+  content: "\00a0";
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 60%;
+  background-color: #dff1f9;
+  transform: skew(-5deg);
+  z-index: -1;
+}
+
+.tac {
+  text-align: center;
+}
+.tar {
+  text-align: right;
+}
+.tal {
+  text-align: left;
+}
+
+.pre {
+  white-space: pre-line;
+}
+
+br.b_br,
+br.m_br,
+br.s_br {
+  display: none;
+}
+
+/* 디바이스 크기가 1200px 이하일 때 */
+@media screen and (max-width: 1200px) {
+  br.b_br {
+    display: block;
+  }
+}
+
+/* 디바이스 크기가 769px 이하일 때 */
+@media screen and (max-width: 769px) {
+  br.m_br {
+    display: block;
+  }
+}
+
+/* 디바이스 크기가 480px 이하일 때 */
+@media screen and (max-width: 480px) {
+  br.s_br {
+    display: block;
+  }
+}
+
+/* =================================================== etc ======================================================= */
+/* =================================================== etc ======================================================= */
+
+/* =================================================== inner ======================================================= */
+/* =================================================== inner ======================================================= */
+
+.inner-all {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inner-1600 {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.inner-1400 {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.inner-1200 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-1000 {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.inner-800 {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .inner-1600 {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .inner-1400 {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-1200 {
+    max-width: none;
+    padding: 0 20px;
+  }
+  .inner-all {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .inner-1000 {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inner-800 {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+/* =================================================== inner ======================================================= */
+/* =================================================== inner ======================================================= */
+
+/* =================================================== dark-mode ======================================================= */
+/* =================================================== dark-mode ======================================================= */
+
+:root.dark {
+  --black: #fff;
+  --light-black: #rgba(255, 255, 255, 0.9);
+  --white: #1b1b1b;
+  --light-white: rgba(25, 25, 25, 0.9);
+  --yellow: #fecc00;
+
+  --text-color: #333;
+  --link-color: #0d597f;
+  --hash-tag: #2c5bb4;
+  --hash-tag-bd: #008de4;
+
+  --gmail: #ea4335;
+  --velog: #20c997;
+  --github: #204ecf;
+}
+
+.dark .light-icon {
+  display: none !important;
+}
+
+.dark .dark-icon {
+  display: inline !important;
+}
+
+.dark .portfolio .btm .detail-btn a::before {
+  background: var(--link-color);
+}
+
+.dark .portfolio .btm .detail-btn a:hover {
+  border: 2px solid var(--link-color);
+}
+
+.dark .skill-list > li > div.tac {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* =================================================== dark-mode ======================================================= */
+/* =================================================== dark-mode ======================================================= */

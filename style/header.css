@@ -1,0 +1,96 @@
+/* =================================================== header ======================================================= */
+/* =================================================== header ======================================================= */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+
+header .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header .dark-mode {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+header .dark-mode svg {
+  width: 100%;
+  fill: var(--white);
+  transition: all 0.4s ease-in-out;
+}
+
+header .dark-mode svg.dark-icon {
+  display: none;
+}
+
+header .dark-mode:hover svg {
+  fill: var(--yellow) !important;
+}
+
+header .quick {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .quick > li {
+  margin: 10px;
+}
+
+header .quick > li > a {
+  display: flex;
+}
+
+header .quick svg {
+  max-width: 28px;
+  width: 100%;
+  fill: var(--white);
+  transition: all 0.4s ease-in-out;
+}
+
+header .quick a.home:hover svg {
+  fill: var(--home);
+}
+
+header .quick a.github:hover svg {
+  fill: var(--github);
+}
+
+header .quick a.gmail:hover svg {
+  fill: var(--gmail);
+}
+
+header .quick a.velog:hover svg {
+  fill: var(--velog);
+}
+
+/* =================================================== header ======================================================= */
+/* =================================================== header ======================================================= */
+
+/* =================================================== header.on ======================================================= */
+/* =================================================== header.on ======================================================= */
+
+header.on {
+  background: var(--light-white);
+}
+
+header.on .quick svg {
+  fill: var(--black);
+}
+
+header.on .dark-mode svg {
+  fill: var(--black);
+}
+
+/* =================================================== header.on ======================================================= */
+/* =================================================== header.on ======================================================= */

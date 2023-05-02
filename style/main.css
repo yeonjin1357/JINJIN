@@ -1,0 +1,625 @@
+/* =================================================== main-common ======================================================= */
+/* =================================================== main-common ======================================================= */
+
+body {
+  background: var(--black);
+}
+
+main {
+  position: relative;
+}
+
+.content {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-tit h2 {
+  margin-bottom: 30px;
+  font-size: 56px;
+  color: var(--white);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  transform: skew(-0.1deg);
+}
+
+.wave-text span {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+}
+
+/*======================= media query 1200px =======================*/
+@media screen and (max-width: 1200px) {
+  main {
+    margin-top: 50px;
+  }
+}
+
+/*======================= media query 769px =======================*/
+@media screen and (max-width: 769px) {
+  .main-tit h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+}
+
+/*======================= media query 480px =======================*/
+@media screen and (max-width: 480px) {
+  .main-tit h2 {
+    font-size: 36px;
+  }
+}
+
+/* =================================================== main-common ======================================================= */
+/* =================================================== main-common ======================================================= */
+
+/* =================================================== banner ======================================================= */
+/* =================================================== banner ======================================================= */
+
+.banner {
+  position: relative;
+  text-align: center;
+  margin: 0 auto 80px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.banner::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, var(--black), transparent 10%);
+}
+
+.banner-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  opacity: 0.8;
+}
+
+.banner-logo svg {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/*======================= media query 769px =======================*/
+@media screen and (max-width: 769px) {
+  .banner {
+    margin-bottom: 60px;
+  }
+}
+
+/*======================= media query 480px =======================*/
+@media screen and (max-width: 480px) {
+  .banner {
+    margin-bottom: 40px;
+  }
+}
+
+/* =================================================== banner ======================================================= */
+/* =================================================== banner ======================================================= */
+
+/* =================================================== intro ======================================================= */
+/* =================================================== intro ======================================================= */
+
+.intro p {
+  white-space: pre-line;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+/*======================= media query 769px =======================*/
+@media screen and (max-width: 769px) {
+  .intro p {
+    white-space: pre-line;
+    font-size: 18px;
+  }
+}
+
+/*======================= media query 600px =======================*/
+@media screen and (max-width: 600px) {
+  .intro p {
+    font-size: 16px;
+  }
+}
+
+/*======================= media query 480px =======================*/
+@media screen and (max-width: 480px) {
+  .intro p {
+    font-size: 14px;
+  }
+}
+
+/* =================================================== intro ======================================================= */
+/* =================================================== intro ======================================================= */
+
+/* =================================================== portfolio ======================================================= */
+/* =================================================== portfolio ======================================================= */
+
+.portfolio {
+  margin: 200px auto 0;
+}
+
+.portfolio-slide-wrap {
+  position: relative;
+}
+
+.portfolio .slide-content {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-button-next,
+.portfolio-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-white);
+  margin-top: 0;
+}
+
+.portfolio-button-next {
+  right: -50px;
+}
+
+.portfolio-button-prev {
+  left: -50px;
+}
+
+.portfolio-pagination {
+  bottom: -40px !important;
+}
+
+.portfolio-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--white);
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio-pagination .swiper-pagination-bullet-active {
+  width: 25px;
+  border-radius: 5px;
+  background: var(--link-color);
+}
+
+.portfolio .thumbnail {
+  position: relative;
+  width: 60%;
+  margin-right: 50px;
+}
+
+.portfolio .thumbnail img {
+  border-radius: 10px;
+}
+
+.portfolio .text {
+  width: 40%;
+}
+
+.portfolio .top h3 {
+  margin-bottom: 5px;
+}
+
+.portfolio .top h3 a {
+  display: inline-block;
+  font-family: "GmarketSansBold";
+  transform: skew(-0.1deg);
+}
+
+.portfolio .top p {
+  position: relative;
+  color: var(--text-color);
+  padding-bottom: 10px;
+}
+
+.portfolio .top p::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--text-color);
+  transition: all 1.2s ease-in-out;
+}
+
+.portfolio .top p.on::before {
+  width: 100%;
+}
+
+.portfolio .btm {
+  margin-top: 20px;
+}
+
+.portfolio .btm .hashtag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.portfolio .btm .hashtag > li {
+  border: 2px solid var(--hash-tag-bd);
+  border-radius: 20px;
+}
+
+.portfolio .btm .hashtag > li > p {
+  color: var(--hash-tag);
+  font-size: 15px;
+  padding: 5px 15px;
+  font-family: "nanumSQB";
+  transform: skew(-0.1deg);
+}
+
+.portfolio .btm .detail-btn {
+  margin-top: 40px;
+}
+
+.portfolio .btm .detail-btn a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px;
+  overflow: hidden;
+  border: 2px solid var(--link-color);
+  border-radius: 30px;
+  color: var(--link-color);
+  font-size: 16px;
+  font-family: "GmarketSansMedium";
+  transform: skew(-0.1deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.portfolio .btm .detail-btn a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background: var(--hash-tag-bd);
+  transition: all 0.2s ease-in-out;
+}
+
+.portfolio .btm .detail-btn a:hover {
+  color: #fff;
+  border: 2px solid var(--hash-tag-bd);
+}
+
+.portfolio .btm .detail-btn a:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+
+/* ======================= media query 1200px =======================*/
+@media screen and (max-width: 1200px) {
+  .portfolio-button-next,
+  .portfolio-button-prev {
+    top: -75px;
+    transform: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .portfolio-button-next {
+    right: 20px;
+  }
+
+  .portfolio-button-prev {
+    left: auto;
+    right: 90px;
+  }
+
+  .portfolio-button-next::after,
+  .portfolio-button-prev::after {
+    font-size: 35px;
+  }
+
+  .portfolio-button-next::before,
+  .portfolio-button-prev::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 55px;
+    border: 1px solid;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* ======================= media query 1024px =======================*/
+@media screen and (max-width: 1024px) {
+  .portfolio .thumbnail {
+    margin-right: 30px;
+  }
+}
+
+/*======================= media query 900px =======================*/
+@media screen and (max-width: 900px) {
+  .portfolio .slide-content {
+    flex-direction: column;
+  }
+
+  .portfolio .slide-content > div {
+    width: 100%;
+  }
+
+  .portfolio .thumbnail {
+    margin: 0 auto 30px;
+  }
+}
+
+/*======================= media query 769px =======================*/
+@media screen and (max-width: 769px) {
+  .portfolio .btm .hashtag > li > p {
+    padding: 3px 12px;
+    font-size: 13px;
+  }
+
+  .portfolio-button-next {
+    right: 15px;
+  }
+
+  .portfolio-button-prev {
+    right: 80px;
+  }
+
+  .portfolio-button-next::after,
+  .portfolio-button-prev::after {
+    font-size: 30px;
+  }
+
+  .portfolio-button-next::before,
+  .portfolio-button-prev::before {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*======================= media query 600px =======================*/
+@media screen and (max-width: 600px) {
+  .portfolio {
+    margin-top: 120px;
+  }
+
+  .portfolio .thumbnail {
+    margin-bottom: 10px;
+  }
+
+  .portfolio .btm .hashtag {
+    gap: 8px;
+  }
+
+  .portfolio .btm .detail-btn a {
+    padding: 6px 32px;
+    font-size: 14px;
+  }
+}
+
+/*======================= media query 480px =======================*/
+@media screen and (max-width: 480px) {
+  .portfolio-button-next,
+  .portfolio-button-prev {
+    top: -65px;
+  }
+
+  .portfolio-button-next {
+    right: 10px;
+  }
+
+  .portfolio-button-prev {
+    right: 60px;
+  }
+
+  .portfolio-button-next::after,
+  .portfolio-button-prev::after {
+    font-size: 20px;
+  }
+
+  .portfolio-button-next::before,
+  .portfolio-button-prev::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .portfolio .btm .detail-btn {
+    margin-top: 30px;
+  }
+
+  .portfolio .btm .detail-btn a {
+    padding: 5px 32px 2px;
+  }
+}
+
+/* =================================================== portfolio ======================================================= */
+/* =================================================== portfolio ======================================================= */
+
+/* =================================================== skills ======================================================= */
+/* =================================================== skills ======================================================= */
+
+.skills {
+  margin: 280px auto 0;
+}
+
+.skill-list > li > div.tac {
+  padding: 30px 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.skill-list > li:nth-child(n + 6):nth-child(-n + 10) {
+  margin-top: 40px;
+}
+
+.skill-list svg {
+  position: relative;
+  overflow: hidden;
+  width: 60%;
+  fill: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+.skill-list > li:nth-child(1) svg.on {
+  fill: var(--html);
+}
+
+.skill-list > li:nth-child(2) svg.on {
+  fill: var(--css);
+}
+
+.skill-list > li:nth-child(3) svg.on {
+  fill: var(--sass);
+}
+
+.skill-list > li:nth-child(4) svg.on {
+  fill: var(--javascript);
+}
+
+.skill-list > li:nth-child(5) svg.on {
+  fill: var(--typescript);
+}
+
+.skill-list > li:nth-child(6) svg.on {
+  fill: var(--jquery);
+}
+
+.skill-list > li:nth-child(7) svg.on {
+  fill: var(--react);
+}
+
+.skill-list > li:nth-child(8) svg.on {
+  fill: var(--php);
+}
+
+.skill-list > li:nth-child(9) svg.on {
+  fill: var(--git);
+}
+
+.skill-list > li:nth-child(10) svg.on {
+  fill: var(--github);
+}
+
+.skill-list p {
+  margin-top: 20px;
+  font-family: "nanumSQB";
+  transform: skew(-0.1deg);
+}
+
+.skill-list .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1); /* 원형 그래프의 배경색 */
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.skill-list .circle svg {
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-list > li:hover .circle {
+  opacity: 1;
+}
+
+/*======================= media query 1200px =======================*/
+@media screen and (max-width: 1200px) {
+  .skill-list > li:nth-child(n + 5):nth-child(-n + 10) {
+    margin-top: 30px;
+  }
+}
+
+/*======================= media query 769px =======================*/
+@media screen and (max-width: 769px) {
+  .skill-list > li:nth-child(n + 4):nth-child(-n + 10) {
+    margin-top: 30px;
+  }
+}
+
+/*======================= media query 600px =======================*/
+@media screen and (max-width: 600px) {
+  .skills {
+    margin-top: 180px;
+  }
+
+  .skill-list > li {
+    width: 50% !important;
+  }
+
+  .skill-list > li:nth-child(n + 3):nth-child(-n + 10) {
+    margin-top: 30px;
+  }
+}
+
+/*======================= media query 480px =======================*/
+@media screen and (max-width: 480px) {
+  .skills {
+    margin-top: 120px;
+  }
+
+  .skill-list > li {
+    margin-top: 0 !important;
+  }
+
+  .skill-list > li > div.tac {
+    padding: 20px 10px;
+    margin: 5px;
+  }
+
+  .skill-list svg {
+    width: 50%;
+  }
+
+  .skill-list p {
+    margin-top: 10px;
+  }
+}
+
+/* =================================================== skills ======================================================= */
+/* =================================================== skills ======================================================= */
+
+/* =================================================== velog-post ======================================================= */
+/* =================================================== velog-post ======================================================= */
+
+.post {
+  margin: 280px auto 0;
+}
+
+/*======================= media query 600px =======================*/
+@media screen and (max-width: 600px) {
+  .post {
+    margin-top: 180px;
+  }
+}
+
+/*======================= media query 480px =======================*/
+@media screen and (max-width: 480px) {
+  .post {
+    margin-top: 120px;
+  }
+}
+
+/* =================================================== velog-post ======================================================= */
+/* =================================================== velog-post ======================================================= */
