@@ -2,8 +2,8 @@
 <html lang="ko">
 
 <?php
-define('ROOT', 'http://jinjin98.com/');
-define('WORKS', 'http://jinjin98.com/works/');
+define('ROOT', 'https://jinjin98.com/');
+define('WORKS', 'https://jinjin98.com/works/');
 ?>
 
 <head>
@@ -11,6 +11,23 @@ define('WORKS', 'http://jinjin98.com/works/');
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L424CKVQ50"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-L424CKVQ50');
+  </script>
+  <!-- Google tag (gtag.js) -->
+
+  <!-- 네이버 웹마스터 도구 -->
+  <meta name="naver-site-verification" content="090f1eaa2a523ba88da9eecfffafd75ed6ddf22a" />
+  <!-- 네이버 웹마스터 도구 -->
 
   <!-- favicon -->
   <link rel="shortcut icon" href="<?php echo ROOT?>img/assets/favicon.ico" type="image/x-icon" />

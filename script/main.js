@@ -201,7 +201,7 @@ function loadArticles(count, showLoading = false) {
     loading.style.display = "flex";
   }
 
-  fetch("http://jinjin98.com/public_html/www/articles.json") // articles.json 파일의 URL을 사용하세요.
+  fetch("https://jinjin98.com/public_html/www/articles.json") // articles.json 파일의 URL을 사용하세요.
     .then((response) => response.json())
     .then((articles) => {
       let articlesDiv = document.getElementById("posts");
