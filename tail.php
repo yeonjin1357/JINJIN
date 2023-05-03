@@ -18,4 +18,11 @@
 
 <script src="<?php echo ROOT?>script/common.js"></script>
 <script src="<?php echo ROOT?>script/header.js"></script>
+
+<?php if (basename($_SERVER['PHP_SELF']) == 'index.php'): ?>
 <script src="<?php echo ROOT?>script/main.js"></script>
+<?php endif; ?>
+
+<?php if (basename($_SERVER['PHP_SELF']) != 'index.php'): ?>
+<script src="<?php echo ROOT?>script/works.js"></script>
+<?php endif; ?>

@@ -2,8 +2,8 @@
 <html lang="ko">
 
 <?php
-define('ROOT', 'http://yeonjin19980125.cafe24.com/');
-define('WORKS', 'http://yeonjin19980125.cafe24.com/works/');
+define('ROOT', 'http://jinjin98.com/');
+define('WORKS', 'http://jinjin98.com/works/');
 ?>
 
 <head>
@@ -33,8 +33,11 @@ define('WORKS', 'http://yeonjin19980125.cafe24.com/works/');
   <link rel="stylesheet" href="<?php echo ROOT?>style/font.css" />
   <link rel="stylesheet" href="<?php echo ROOT?>style/common.css" />
   <link rel="stylesheet" href="<?php echo ROOT?>style/header.css" />
-  <link rel="stylesheet" href="<?php echo ROOT?>style/main.css" />
   <link rel="stylesheet" href="<?php echo ROOT?>style/tail.css" />
+  <link rel="stylesheet" href="<?php echo ROOT?>style/main.css" />
+  <?php if (basename($_SERVER['PHP_SELF']) != 'index.php'): ?>
+  <link rel="stylesheet" href="<?php echo ROOT?>style/works.css" />
+  <?php endif; ?>
 
   <title>JINJIN</title>
 </head>

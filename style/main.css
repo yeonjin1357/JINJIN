@@ -30,6 +30,25 @@ main {
   animation: wave 1.5s infinite;
 }
 
+.hashtag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hashtag > li {
+  border: 2px solid var(--hash-tag-bd);
+  border-radius: 20px;
+}
+
+.hashtag > li > p {
+  color: var(--hash-tag);
+  font-size: 15px;
+  padding: 5px 15px;
+  font-family: "nanumSQB";
+  transform: skew(-0.1deg);
+}
+
 @keyframes wave {
   0%,
   100% {
@@ -52,6 +71,18 @@ main {
   .main-tit h2 {
     margin-bottom: 20px;
     font-size: 48px;
+  }
+
+  .hashtag > li > p {
+    padding: 3px 12px;
+    font-size: 13px;
+  }
+}
+
+/*======================= media query 600px =======================*/
+@media screen and (max-width: 600px) {
+  .hashtag {
+    gap: 8px;
   }
 }
 
@@ -249,25 +280,6 @@ main {
   margin-top: 20px;
 }
 
-.portfolio .btm .hashtag {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.portfolio .btm .hashtag > li {
-  border: 2px solid var(--hash-tag-bd);
-  border-radius: 20px;
-}
-
-.portfolio .btm .hashtag > li > p {
-  color: var(--hash-tag);
-  font-size: 15px;
-  padding: 5px 15px;
-  font-family: "nanumSQB";
-  transform: skew(-0.1deg);
-}
-
 .portfolio .btm .detail-btn {
   margin-top: 40px;
 }
@@ -280,7 +292,7 @@ main {
   border: 2px solid var(--link-color);
   border-radius: 30px;
   color: var(--link-color);
-  font-size: 16px;
+  font-size: 18px;
   font-family: "GmarketSansMedium";
   transform: skew(-0.1deg);
   transition: all 0.2s ease-in-out;
@@ -367,11 +379,6 @@ main {
 
 /*======================= media query 769px =======================*/
 @media screen and (max-width: 769px) {
-  .portfolio .btm .hashtag > li > p {
-    padding: 3px 12px;
-    font-size: 13px;
-  }
-
   .portfolio-button-next {
     right: 15px;
   }
@@ -402,12 +409,8 @@ main {
     margin-bottom: 10px;
   }
 
-  .portfolio .btm .hashtag {
-    gap: 8px;
-  }
-
   .portfolio .btm .detail-btn a {
-    padding: 6px 32px;
+    padding: 10px 32px 6px;
     font-size: 14px;
   }
 }
@@ -607,10 +610,161 @@ main {
   margin: 280px auto 0;
 }
 
+#posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 20px;
+}
+
+#posts > li {
+  width: calc(50% - 10px);
+  animation: fadeIn 0.5s ease-in;
+}
+
+#posts .thumbnail-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+#posts .thumbnail-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+#posts .post-info {
+  margin-top: 20px;
+}
+
+#posts .post-info h6 {
+  margin-bottom: 10px;
+}
+
+#posts .post-btm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 10px;
+}
+
+#posts .post-btm a {
+  font-family: "nanumSQB";
+  transform: skew(-0.1deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loading {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.post #load-more {
+  position: relative;
+  display: block;
+  margin: 80px auto 0;
+  padding: 10px 40px;
+  overflow: hidden;
+  border: 2px solid var(--link-color);
+  border-radius: 30px;
+  color: var(--link-color);
+  font-size: 18px;
+  font-family: "GmarketSansMedium";
+  transform: skew(-0.1deg);
+  transition: all 0.2s ease-in-out;
+  background: none;
+  cursor: pointer;
+}
+
+.post #load-more::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background: var(--hash-tag-bd);
+  transition: all 0.2s ease-in-out;
+}
+
+.post #load-more:hover {
+  color: #fff;
+  border: 2px solid var(--hash-tag-bd);
+}
+
+.post #load-more:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+
+/*======================= media query 769px =======================*/
+@media screen and (max-width: 769px) {
+  #posts > li {
+    width: 100%;
+  }
+
+  #posts .post-info h6 {
+    font-size: 25px;
+  }
+
+  #posts .post-info p {
+    font-size: 17px;
+  }
+}
+
 /*======================= media query 600px =======================*/
 @media screen and (max-width: 600px) {
   .post {
     margin-top: 180px;
+  }
+
+  .post #load-more {
+    padding: 10px 32px 6px;
+    font-size: 14px;
+  }
+
+  #posts .post-info h6 {
+    font-size: 20px;
+  }
+
+  #posts .post-info p {
+    font-size: 15px;
   }
 }
 
@@ -618,6 +772,10 @@ main {
 @media screen and (max-width: 480px) {
   .post {
     margin-top: 120px;
+  }
+
+  .post #load-more {
+    padding: 5px 32px 2px;
   }
 }
 

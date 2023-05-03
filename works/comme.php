@@ -1,9 +1,9 @@
 <!-- head.php -->
 <?php include "../head.php"; ?>
 
-<div id="container">
-  <p>커밋 테스트</p>
-</div>
+<main>
+  <div id="container"></div>
+</main>
 
 <!-- tail.php -->
 <?php include "../tail.php"; ?>

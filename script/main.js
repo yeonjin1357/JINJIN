@@ -190,3 +190,71 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ======================================== .skill-list hover 원형 그래프 ======================================== //
 // ======================================== .skill-list hover 원형 그래프 ======================================== //
+
+// ======================================== velog 최근 게시물 가져오기 ======================================== //
+// ======================================== velog 최근 게시물 가져오기 ======================================== //
+let articlesLoaded = 4;
+
+function loadArticles(count, showLoading = false) {
+  if (showLoading) {
+    let loading = document.getElementById("loading");
+    loading.style.display = "flex";
+  }
+
+  fetch("http://jinjin98.com/public_html/www/articles.json") // articles.json 파일의 URL을 사용하세요.
+    .then((response) => response.json())
+    .then((articles) => {
+      let articlesDiv = document.getElementById("posts");
+      articlesDiv.innerHTML = "";
+      articles.slice(0, count).forEach((article) => {
+        // 괄호와 작은따옴표를 제거하고 쉼표로 분리하여 배열을 만듭니다.
+        let tags = article.tags.replace(/[\[\]']/g, "").split(", ");
+
+        // 각 태그에 대해 별도의 <li> 요소를 생성
+        let tagsHtml = tags
+          .map((tag) => {
+            let capitalizedTag = tag.charAt(0).toUpperCase() + tag.slice(1);
+            return `<li><p># ${capitalizedTag}</p></li>`;
+          })
+          .join("");
+
+        let articleHtml = `
+          <li class="post-list">
+            <div class="thumbnail-wrap">
+              <a href="https://velog.io${article.href}" target="_blank">
+                <img src="${article.thumbnail}">
+              </a>
+            </div>
+            <div class="post-info">
+              <h6>${article.headline}</h6>
+              <p>${article.context}</p>
+              <div class="post-btm">
+                <p><a href="https://velog.io${article.href}" target="_blank">포스팅 바로가기</a></p>
+                <p><span class="x0_9">${article.date}</span></p>
+              </div>
+              <ul class="hashtag">${tagsHtml}</ul>
+            </div>
+          </li>
+      `;
+        articlesDiv.innerHTML += articleHtml;
+      });
+
+      if (showLoading) {
+        // 로딩 애니메이션을 2초간 유지한 후 사라지게 만들기
+        setTimeout(() => {
+          let loading = document.getElementById("loading");
+          loading.style.display = "none";
+        }, 2000);
+      }
+    });
+}
+
+document.getElementById("load-more").addEventListener("click", () => {
+  articlesLoaded += 2;
+  loadArticles(articlesLoaded, true);
+});
+
+loadArticles(articlesLoaded);
+
+// ======================================== velog 최근 게시물 가져오기 ======================================== //
+// ======================================== velog 최근 게시물 가져오기 ======================================== //

@@ -48,7 +48,7 @@
     <!-- intro -->
 
     <!-- portfolio -->
-    <div class="portfolio" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
+    <div class="portfolio">
       <div class="inner-1200">
         <div class="main-tit">
           <h2 class="wave-text">WORKS.</h2>
@@ -421,8 +421,12 @@
         <div class="main-tit">
           <h2 class="wave-text">Recent Posts.</h2>
         </div>
-
+        <ul id="posts"></ul>
+        <button id="load-more">게시물 더 보기</button>
       </div>
+    </div>
+    <div id="loading" class="loading">
+      <div class="loading-spinner"></div>
     </div>
     <!-- velog-post -->
 

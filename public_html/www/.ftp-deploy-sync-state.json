@@ -1,0 +1,25 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1683093004507,
+    "data": [
+        {
+            "type": "file",
+            "name": "articles.json",
+            "size": 9170,
+            "hash": "d189df85b654a3be63420591691e3a7cba31aab64818c076d529c4b8f0228631"
+        },
+        {
+            "type": "file",
+            "name": "requirements.txt",
+            "size": 1017,
+            "hash": "990a684654d688bbd62cc7b470e644a68470b461e3fb5b308e92d673fbbc3d12"
+        },
+        {
+            "type": "file",
+            "name": "crawler.py",
+            "size": 2342,
+            "hash": "f2d4d15881e779b5326be5fd6ad64b955893ad6db4bf9308268348ac7009e819"
+        }
+    ]
+}
