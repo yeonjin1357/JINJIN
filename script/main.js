@@ -214,7 +214,7 @@ function loadArticles(count, showLoading = false) {
         let tagsHtml = tags
           .map((tag) => {
             let capitalizedTag = tag.charAt(0).toUpperCase() + tag.slice(1);
-            return `<li><p># ${capitalizedTag}</p></li>`;
+            return `<li><a href="https://velog.io/@yeonjin1357?tag=${capitalizedTag}" target="_blank"><p># ${capitalizedTag}</p></a></li>`;
           })
           .join("");
 

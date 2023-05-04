@@ -41,12 +41,16 @@ main {
   border-radius: 20px;
 }
 
-.hashtag > li > p {
+.hashtag > li p {
   color: var(--hash-tag);
   font-size: 15px;
   padding: 5px 15px;
   font-family: "nanumSQB";
   transform: skew(-0.1deg);
+}
+
+.hashtag > li a {
+  display: inline-block;
 }
 
 @keyframes wave {
