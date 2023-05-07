@@ -35,5 +35,3 @@ button.forEach((button, index) => {
     console.log(`Button ${index + 1} clicked!`);
   });
 });
-
-// 테스트

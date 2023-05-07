@@ -3,7 +3,7 @@
 
 <main>
   <div class="banner">
-    <img src="img/main/head_banner_test2.png" alt="" />
+    <img src="img/main/head_banner_test3.png" alt="" />
     <div class="banner-logo">
       <svg xmlns:mydata="http://www.w3.org/2000/svg" mydata:contrastcolor="001A70" mydata:template="Contrast" mydata:presentation="2.5" mydata:layouttype="undefined" mydata:specialfontid="undefined" mydata:id1="743" mydata:id2="033" mydata:companyname="JINJIN" mydata:companytagline="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="65 204.10208263482008 420 61.79583473035984" class="watermark-logo">
@@ -14,7 +14,7 @@
                 d="M65,204.10208v61.79583h65.77877v-61.79583zM97.43354,243.72273v1.76279c0,0.97257 -0.33432,1.79318 -1.00296,2.46182c-0.66864,0.66864 -1.48925,1.00296 -2.46182,1.00296h-2.61379v6.99036h2.61379c1.45886,0 2.81641,-0.27354 4.07264,-0.82061c1.25624,-0.54707 2.36051,-1.29676 3.31282,-2.24907c0.95231,-0.95231 1.702,-2.05658 2.24907,-3.31282c0.54707,-1.25624 0.82061,-2.61379 0.82061,-4.07264v-31.42622h-6.99036z"
                 data-paper-data="{&quot;glyphName&quot;:&quot;J&quot;,&quot;glyphIndex&quot;:0,&quot;firstGlyphOfWord&quot;:true,&quot;word&quot;:1}" style="fill: rgb(255, 255, 255);"></path>
               <path d="M135.84425,204.10208v61.79583h65.77877v-61.79583zM172.19867,255.94066v-41.88137h-6.92978v41.88137z" data-paper-data="{&quot;glyphName&quot;:&quot;I&quot;,&quot;glyphIndex&quot;:1,&quot;word&quot;:1}" style="fill: rgb(255, 255, 255);"></path>
-              <path d="M206.68849,204.10208v61.79583h65.77877v-61.79583zM250.91467,255.94066v-41.82058h-6.99036v20.91029l-6.92957,-20.91029h-8.75335v6.92957h4.07285l11.61007,34.89101zM236.99474,255.94066v-18.17493l-5.28836,-15.80429h-1.702v33.97922z" data-paper-data="{&quot;glyphName&quot;:&quot;N&quot;,&quot;glyphIndex&quot;:2,&quot;word&quot;:1}" style="fill: rgb(255, 255, 255);"></path>
+              <path d="M206.68849,204.10208v61.79583h65.77877v-61.79583zM250.91467,255.94066v-41.82058h-6.99036v20.91029l-6.92957,-20.91029h-8.75335v6.92957h4.07285l11.61007,34.89101zM236.99474,255.94066v-18.17493l-5.28836,-15.80429h-1.702v33.97922z" data-paper-data="{&quot;glyphName&quot;:&quot;N&quot;,&quot;glyphIndex&quot;:2,&quot;word&quot;:1}" style="fill: #da291c;"></path>
               <path
                 d="M277.53274,204.10208v61.79583h65.77877v-61.79583zM309.96648,243.72273v1.76279c0,0.97257 -0.33432,1.79318 -1.00296,2.46182c-0.66864,0.66864 -1.48925,1.00296 -2.46182,1.00296h-2.61379v6.99036h2.61379c1.45886,0 2.81641,-0.27354 4.07264,-0.82061c1.25624,-0.54707 2.36051,-1.29676 3.31282,-2.24907c0.95231,-0.95231 1.702,-2.05658 2.24907,-3.31282c0.54707,-1.25624 0.82061,-2.61379 0.82061,-4.07264v-31.42622h-6.99036z"
                 data-paper-data="{&quot;glyphName&quot;:&quot;J&quot;,&quot;glyphIndex&quot;:3,&quot;word&quot;:1}" style="fill: rgb(255, 255, 255);"></path>
