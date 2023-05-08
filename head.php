@@ -32,12 +32,12 @@ define('WORKS', 'https://jinjin98.com/works/');
   <!-- favicon -->
   <link rel="shortcut icon" href="<?php echo ROOT?>img/assets/favicon.ico" type="image/x-icon" />
   <!-- 오픈그래프 태그, 소셜 미디어로 공유될 때 우선적으로 활용 -->
-  <meta name="description" content="JINJIN" />
-  <meta name="keywords" content="JINJIN" />
+  <meta name="description" content="JINJIN : 웹 퍼블리셔 포트폴리오" />
+  <meta name="keywords" content="JINJIN, 웹퍼블리셔, 포트폴리오, 웹퍼블리셔 포트폴리오, 프론트엔트 개발자 포트폴리오, 프론트엔트 개발" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="JINJIN" />
   <meta property="og:site_name" content="JINJIN" />
-  <meta property="og:description" content="JINJIN" />
+  <meta property="og:description" content="JINJIN : 웹 퍼블리셔 포트폴리오" />
   <meta property="og:image" content="<?php echo ROOT?>img/assets/cover.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
