@@ -25,7 +25,7 @@ waveTexts.forEach((waveText) => {
 // ======================================== 포트폴리오 슬라이드 ======================================== //
 // ======================================== 포트폴리오 슬라이드 ======================================== //
 
-const swiper = new Swiper(".portfolio-slide", {
+const portfolioSlide = new Swiper(".portfolio-slide", {
   // Optional parameters
   direction: "horizontal",
   slidesPerView: 1,
@@ -69,16 +69,16 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const slideElements = document.querySelectorAll(".swiper-slide");
+const slideElements = document.querySelectorAll(".portfolio-slide .swiper-slide");
 slideElements.forEach((slideElement) => {
   observer.observe(slideElement);
 });
 
 // 슬라이드가 변경될 때마다 .on 클래스 추가/삭제
-swiper.on("slideChange", () => {
+portfolioSlide.on("slideChange", () => {
   slideElements.forEach((slideElement, index) => {
     const pElement = slideElement.querySelector(".top p");
-    if (index === swiper.activeIndex) {
+    if (index === portfolioSlide.activeIndex) {
       pElement.classList.add("on");
     } else {
       pElement.classList.remove("on");
