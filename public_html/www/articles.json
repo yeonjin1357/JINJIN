@@ -1,5 +1,21 @@
 [
     {
+        "href": "/@yeonjin1357/React-React-기본-개념-이해-12",
+        "headline": "[React] React 기본 개념 이해 [1/2]",
+        "context": "React의 기본 개념에 대해서 알아보기 📃",
+        "date": "6일 전",
+        "tags": "['React']",
+        "thumbnail": "https://velog.velcdn.com/images/yeonjin1357/post/88931d9f-d85a-4653-aa6a-8ba26dc48b02/image.png"
+    },
+    {
+        "href": "/@yeonjin1357/GitHub-Action-사용해서-주기적으로-Python-코드-실행하기",
+        "headline": "GitHub Action 사용해서 주기적으로 Python 실행",
+        "context": "GitHub Action을 사용하여서 자동화된 Python 코드를 실행해봅니다!",
+        "date": "2023년 5월 12일",
+        "tags": "['github', 'github action']",
+        "thumbnail": "https://velog.velcdn.com/images/yeonjin1357/post/b33bc213-a720-45d5-b178-c27e53cc37b5/image.JPG"
+    },
+    {
         "href": "/@yeonjin1357/React-클래스형-컴포넌트-함수형-컴포넌트",
         "headline": "[React] 클래스형 컴포넌트, 함수형 컴포넌트",
         "context": "두 가지 컴포넌트를 비교하며 각 방법의 특징과 장단점 알아보기 ✨",
@@ -28,8 +44,8 @@
         "headline": "React 프로젝트 GitHub Pages로 배포하기",
         "context": "은근 모르는 사람들이 많다는 GitHub Pages 알아보기 💻",
         "date": "2023년 4월 18일",
-        "tags": "['React', 'git', 'github']",
-        "thumbnail": "https://velog.velcdn.com/images/yeonjin1357/post/8555d039-8f63-4365-9f7a-784996d4d90b/image.jpg"
+        "tags": "['React', 'github']",
+        "thumbnail": "https://velog.velcdn.com/images/yeonjin1357/post/22c0601a-3614-4762-8ca5-65cfb682eaed/image.JPG"
     },
     {
         "href": "/@yeonjin1357/React-React-시작하기",
@@ -142,21 +158,5 @@
         "date": "2023년 2월 23일",
         "tags": "['JavaScript', '라이브러리']",
         "thumbnail": "https://velog.velcdn.com/images/yeonjin1357/post/8e99bca6-6cda-4355-b0db-90351fe34ce3/image.jpg"
-    },
-    {
-        "href": "/@yeonjin1357/JS-라이브러리-Fullpage.js의-모든-것",
-        "headline": "[JS 라이브러리] Fullpage.js의 모든 것",
-        "context": "간단하게 풀페이지 형식을 구축하고 싶을 때 사용해봅시다.",
-        "date": "2023년 2월 22일",
-        "tags": "['JavaScript', '라이브러리']",
-        "thumbnail": "https://velog.velcdn.com/images/yeonjin1357/post/4853a533-842f-4c8e-863e-a8807e156632/image.jpg"
-    },
-    {
-        "href": "/@yeonjin1357/클린코드-JS-2장.-타입-다루기-12",
-        "headline": "[클린코드 JS] 2장. 타입 다루기 (1/2)",
-        "context": "자바스크립트의 타입과 종류 그리고 타입검사에 대해서 자세히 알아보겠습니다.",
-        "date": "2023년 2월 13일",
-        "tags": "['JavaScript', '클린코드']",
-        "thumbnail": "https://velog.velcdn.com/images/yeonjin1357/post/bac65930-38e3-4530-8b2c-a550aab782f6/image.png"
     }
 ]

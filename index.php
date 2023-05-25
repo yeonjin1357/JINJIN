@@ -430,6 +430,50 @@
     </div>
     <!-- velog-post -->
 
+    <!-- <div class="pay">
+      <div class="inner-1200">
+        <div class="main-tit">
+          <h2 class="wave-text">Pay Test.</h2>
+        </div>
+        <select id="pgSelector">
+          <option value="html5_inicis">KG이니시스</option>
+          <option value="kakaopay">카카오페이</option>
+          <option value="tosspay">토스페이</option>
+        </select>
+
+        <button id="paymentButton">결제하기</button>
+
+        <script type="text/javascript">
+        var IMP = window.IMP; // 아임포트 네임스페이스 사용
+        IMP.init('imp45636266'); // 앞서 얻은 가맹점 식별코드를 이용해 초기화
+
+        document.getElementById('paymentButton').addEventListener('click', function() {
+          var selectedPG = document.getElementById('pgSelector').value;
+
+          IMP.request_pay({
+            pg: selectedPG, // PG사
+            pay_method: 'card', // 결제수단
+            merchant_uid: 'merchant_' + new Date().getTime(), // 가맹점 주문번호
+            name: '주문명:결제테스트', // 주문명
+            amount: 100, // 결제금액
+            buyer_email: 'iamport@siot.do', // 구매자 이메일
+            buyer_name: '구매자이름', // 구매자 이름
+            buyer_tel: '010-1234-5678', // 구매자 전화번호
+            buyer_addr: '서울특별시 강남구 삼성동', // 구매자 주소
+            buyer_postcode: '123-456', // 구매자 우편번호
+          }, function(rsp) {
+            if (rsp.success) {
+              // 결제 성공 시 로직,
+            } else {
+              // 결제 실패 시 로직,
+            }
+          });
+        });
+        </script>
+
+      </div>
+    </div> -->
+
 </main>
 
 <!-- tail.php -->

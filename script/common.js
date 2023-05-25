@@ -21,6 +21,19 @@ window.addEventListener("load", AOS.refresh);
 const darkModeToggle = document.querySelector(".dark-mode");
 const root = document.documentElement;
 
+// Check for saved 'darkMode' in localStorage
+if (localStorage.getItem("darkMode") === "true") {
+  root.classList.add("dark");
+} else {
+  root.classList.remove("dark");
+}
+
 darkModeToggle.addEventListener("click", () => {
   root.classList.toggle("dark");
+  // Save the current theme in localStorage
+  if (root.classList.contains("dark")) {
+    localStorage.setItem("darkMode", "true");
+  } else {
+    localStorage.setItem("darkMode", "false");
+  }
 });
